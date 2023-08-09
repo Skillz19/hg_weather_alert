@@ -1,0 +1,51 @@
+import React, { useState, useEffect } from 'react';
+
+const LocationInput: React.FC = () => {
+    const [inputValue, setInputValue] = useState<string>('');
+
+    const handlePlaceSelect = (place: google.maps.places.PlaceResult) => {
+        // Handle the selected place here, e.g., set state, call API, etc.
+        console.log('Selected Place:', place);
+    };
+
+    useEffect(() => {
+        let autocomplete: google.maps.places.Autocomplete;
+
+        const initAutocomplete = () => {
+            const doc: HTMLInputElement = document.querySelector('input')!;
+            autocomplete = new google.maps.places.Autocomplete(
+                doc,
+                { types: ['geocode'] }
+            );
+            autocomplete.addListener('place_changed', function () {
+                handlePlaceSelect(autocomplete.getPlace());
+            });
+        };
+
+        if (inputValue) {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB03z0J0Z5A9Xxv98hgTN26-DKL9FLw4p0&libraries=places&callback=initAutocomplete`;
+            script.async = true;
+            script.defer = true;
+            script.onload = initAutocomplete;
+            document.body.appendChild(script);
+        }
+    }, [inputValue]);
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setInputValue(event.target.value);
+        //console.log(event.target.value);
+    };
+
+    return (
+        <div>
+            <input
+                type="text"
+                value={inputValue}
+                onChange={handleInputChange}
+                placeholder="Enter a location"
+            />
+        </div>
+    );
+};
+
+export default LocationInput;

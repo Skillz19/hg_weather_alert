@@ -1,0 +1,56 @@
+.container {
+    width: 19.5rem;
+    height: 7.5rem;
+    min-width: 314px;
+    min-height: 152px;
+  }
+.report-container {
+    margin-top: -1.5rem;
+  }
+  .report-container h2 {
+    border-style: solid;
+    border-width: 4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(236, 233, 233);
+    margin-right: auto;
+  }
+  .weather-report {
+    display: flex;
+    flex: 1;
+    margin-top: -1.5rem;
+  }
+  .icon-windSpeed {
+    display: grid;
+    flex: 1;
+  }
+  .day-temp {
+    display: grid;
+    flex: 1;
+    margin-right: -3rem;
+  }
+  .windDetails {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+  }
+  .windSpeed {
+    display: flex;
+    align-items: center;
+    margin-left: -1.5rem;
+    margin-bottom: 0;
+    margin-top: -2.5rem;
+  }
+  .paragraph {
+    margin-top: -0.5rem;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(236, 233, 233);
+    margin-right: 4rem;
+  }
+    

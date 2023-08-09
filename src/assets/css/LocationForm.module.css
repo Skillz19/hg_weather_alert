@@ -1,0 +1,78 @@
+.form {
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #307e6c, #2b996d);
+    min-width: 400px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form label, .form p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #76c0ae;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #c2e9e0;
+    font-size: 1rem;
+  }
+
+  .invalid input{
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+  }
+  
+  .invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: linear-gradient(180deg, #1f584b, #17493d);
+    color: #c2e9e0;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: linear-gradient(180deg, #1b5346, #113c32);
+  }
+
+  .button:disabled {
+    cursor: not-allowed; 
+    background: linear-gradient(145deg, #e3e7e7, #94c7bb);
+    color: #c22c2c; 
+    opacity: 0.6; 
+  }
+  .errorMessage {
+    text-align: center;
+    color: #b40e0e;
+  }
+  

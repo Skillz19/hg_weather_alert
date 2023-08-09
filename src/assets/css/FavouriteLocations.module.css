@@ -1,0 +1,38 @@
+.favourites {
+    max-width: 60rem;
+    min-width: 697px;
+    width: 90%;
+    max-height: 600px;
+    margin: 2rem auto;
+    animation: favourites-appear 1s ease-out forwards;
+    overflow-y: auto; 
+  }
+  
+  .favourites ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+.fallback-container{
+  display: flex;
+  justify-content: center;
+}
+  .fallback{
+    width: 40rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    min-width: 676px;
+  }
+  
+  @keyframes favourites-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

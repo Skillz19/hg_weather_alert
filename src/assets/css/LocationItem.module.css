@@ -1,0 +1,56 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.locationContainer{
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.locationItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.locationItem:hover{
+  background-color: lightblue;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: rgb(250, 10, 10);
+}
+
+.locationTitle {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Horizontally center the items */
+  background-color: rgb(9, 164, 9);
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 15rem;
+  min-height: 5rem;
+}
+
+.locationTitle h2 {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+}
+
+.removeBtn:hover {
+  color: rgb(48, 46, 46);
+  font-size: 1.03rem;
+}
+
+.link{
+  text-decoration: none;
+}

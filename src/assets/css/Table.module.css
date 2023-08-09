@@ -1,0 +1,30 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -0.5rem;
+    min-width: 274px;
+  }
+  
+  .table th, .table td {
+    /*border: 1px solid #ccc;*/
+    border: none;
+    white-space: normal;
+    max-width: 7rem;
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .table td:last-child {
+    text-align: right;
+  }
